@@ -27,13 +27,19 @@ GEM
     http-form_data (2.2.0)
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
+    jsonpath (1.0.5)
+      multi_json
+      to_regexp (~> 0.2.1)
     kubeclient (4.6.0)
       http (>= 3.0, < 5.0)
       recursive-open-struct (~> 1.0, >= 1.0.4)
       rest-client (~> 2.0)
+    macaddr (1.7.2)
+      systemu (~> 2.6.5)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
+    multi_json (1.14.1)
     netrc (0.11.0)
     public_suffix (4.0.3)
     rake (13.0.1)
@@ -56,16 +62,22 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
+    systemu (2.6.5)
+    to_regexp (0.2.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  jsonpath (~> 1.0.5)
   keyvalue-kubernetes-configmap!
   rspec (~> 3.9)
+  uuid (~> 2.3.0)
 
 BUNDLED WITH
    2.1.2
