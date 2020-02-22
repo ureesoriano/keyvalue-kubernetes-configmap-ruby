@@ -1,0 +1,3 @@
+bundle/
+.kube/
+.rspec_status
