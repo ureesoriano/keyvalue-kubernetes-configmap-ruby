@@ -18,4 +18,6 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/**/*.rb"]
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "rspec", "~> 3.9"
+
 end
