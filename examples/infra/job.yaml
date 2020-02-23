@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: keyvalue-k8s-example-job
+spec:
+  template:
+    spec:
+      serviceAccountName: keyvalue-k8s-example-service-account
+      containers:
+      - name: keyvalue-k8s-example-container
+        image: _your_application_image_
+        command: ["_command_to_run_your_application_"]
+      restartPolicy: Never
