@@ -20,6 +20,16 @@ module KeyValue
         rescue Kubeclient::ResourceNotFoundError
           raise KeyNotFoundError, "Key '#{key_name}' not found"
         end
+
+        def update_key(key_name, value)
+          @k8s_client.patch_config_map(
+            key_name,
+            { data: { value: value.to_json } },
+            'default'
+          )
+        rescue Kubeclient::ResourceNotFoundError
+          raise KeyNotFoundError, "Key '#{key_name}' not found"
+        end
       end
     end
   end
