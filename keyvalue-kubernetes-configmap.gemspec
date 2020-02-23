@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "kubeclient", "~> 4.6.0"
+  spec.add_development_dependency "bdd", "~> 0.1.5"
   spec.add_development_dependency "uuid", "~> 2.3.0"
   spec.add_development_dependency "jsonpath", "~> 1.0.5"
   spec.add_development_dependency "rspec", "~> 3.9"

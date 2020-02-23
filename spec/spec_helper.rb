@@ -1,4 +1,5 @@
 require "bundler/setup"
+require "bdd"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -10,4 +11,7 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.color = true
+  config.default_formatter = Bdd::RSpec::Formatter
 end
