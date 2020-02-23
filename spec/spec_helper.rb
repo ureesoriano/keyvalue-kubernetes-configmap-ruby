@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "bdd"
+require "keyvalue/kubernetes/configmap"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
